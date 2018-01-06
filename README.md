@@ -11,9 +11,10 @@ git clone https://github.com/technetos/SlackwareInstaller.git
 ```
 ./grab_files.sh
 ```
-Doing so will populate `EFI/BOOT/` with the following files:
-+ `bzImage` - The kernel for the slackware installer
-+ `initrd.img` - The ramdisk that contains the actual installer
+Doing so will grap the following directories:
++ `kernels` - The kernels for the slackware installer
++ `isolinux` - The ramdisk that contains the actual installer
++ `EFI` - The efi files required to boot an efi system
 
 and create the following directory: 
 + `slackware64` - The packages for a minimal 64 bit slackware installation
